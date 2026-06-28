@@ -14,8 +14,6 @@ body{
     color:#222;
 }
 
-
-
 header{
     position:fixed;
     width:100%;
@@ -55,7 +53,6 @@ header{
     text-decoration:none;
     color:#333;
     font-weight:500;
-    transition:.3s;
 }
 
 .nav-links a:hover{
@@ -68,7 +65,6 @@ header{
     color:#fff;
     padding:12px 24px;
     border-radius:8px;
-    transition:.3s;
     border:none;
     cursor:pointer;
 }
@@ -84,7 +80,6 @@ header{
     padding:12px 24px;
     border-radius:8px;
     margin-left:15px;
-    transition:.3s;
 }
 
 .btn-outline:hover{
@@ -92,12 +87,10 @@ header{
     color:#0d6efd;
 }
 
-
 .hero{
     height:100vh;
-    background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("images/hero.jpg");
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("images/Screenshot 2026-06-28 190858.png");
     background-size:cover;
     background-position:center;
     display:flex;
@@ -112,19 +105,12 @@ header{
 
 .hero h1{
     font-size:58px;
-    line-height:1.2;
 }
 
 .hero p{
     margin:25px 0;
     font-size:18px;
-    line-height:1.8;
 }
-
-.hero-buttons{
-    margin-top:35px;
-}
-
 
 .about{
     width:90%;
@@ -140,49 +126,10 @@ header{
     border-radius:20px;
 }
 
-.about h4{
-    color:#0d6efd;
-    margin-bottom:10px;
-}
-
-.about h2{
-    font-size:42px;
-    margin-bottom:20px;
-}
-
-.about p{
-    line-height:1.8;
-    margin-bottom:20px;
-}
-
-.about ul{
-    list-style:none;
-}
-
-.about li{
-    margin:15px 0;
-}
-
-.about i{
-    color:#0d6efd;
-    margin-right:8px;
-}
-
-
-
 .services{
     padding:90px 8%;
     text-align:center;
     background:#eef5ff;
-}
-
-.services h4{
-    color:#0d6efd;
-}
-
-.services h2{
-    font-size:40px;
-    margin-bottom:50px;
 }
 
 .cards{
@@ -195,24 +142,8 @@ header{
     background:#fff;
     padding:40px 25px;
     border-radius:15px;
-    transition:.3s;
     box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card i{
-    font-size:45px;
-    color:#0d6efd;
-    margin-bottom:20px;
-}
-
-.card h3{
-    margin-bottom:15px;
-}
-
 
 .contact{
     width:90%;
@@ -220,24 +151,6 @@ header{
     display:grid;
     grid-template-columns:1fr 1.5fr;
     gap:60px;
-}
-
-.contact h4{
-    color:#0d6efd;
-}
-
-.contact h2{
-    font-size:40px;
-    margin:10px 0 25px;
-}
-
-.contact p{
-    margin:15px 0;
-}
-
-.contact i{
-    color:#0d6efd;
-    margin-right:8px;
 }
 
 form{
@@ -251,14 +164,7 @@ form textarea{
     margin-bottom:20px;
     border:1px solid #ddd;
     border-radius:8px;
-    font-size:16px;
 }
-
-textarea{
-    resize:none;
-}
-
-
 
 footer{
     background:#0d1b38;
@@ -267,32 +173,15 @@ footer{
     padding:35px;
 }
 
-footer h2{
-    margin-bottom:15px;
-}
-
-
-
 @media(max-width:992px){
-
-.hero h1{
-    font-size:42px;
+    .hero h1{font-size:42px;}
+    .about{grid-template-columns:1fr;}
+    .cards{grid-template-columns:1fr;}
+    .contact{grid-template-columns:1fr;}
+    .navbar{flex-direction:column; gap:15px;}
 }
 
-.about{
-    grid-template-columns:1fr;
-}
-
-.cards{
-    grid-template-columns:1fr;
-}
-
-.contact{
-    grid-template-columns:1fr;
-}
-
-.nav-links{
-    display:none;
-}
-
+@media(max-width:576px){
+    .hero h1{font-size:32px;}
+    .hero p{font-size:16px;}
 }
